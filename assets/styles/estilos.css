@@ -1,0 +1,143 @@
+/* Reset
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:root {
+  --font-base: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Arial, sans-serif;
+  --font-size-sm: clamp(0.6667rem, 0.1389vw + 0.6389rem, 0.75rem);
+  --font-size-base: clamp(1rem, 0.2083vw + 0.9583rem, 1.125rem);
+  --font-size-md: clamp(1.5rem, 0.3125vw + 1.4375rem, 1.6875rem);
+  --font-size-lg: clamp(2.25rem, 0.4688vw + 2.1563rem, 2.5313rem);
+  --font-size-xl: clamp(3.375rem, 0.7031vw + 3.2344rem, 3.7969rem);
+  --font-size-xxl: clamp(5.0625rem, 1.0547vw + 4.8516rem, 5.6953rem);
+  --font-size-xxxl: clamp(7.5938rem, 1.582vw + 7.2773rem, 8.543rem);
+}
+
+body {
+  background: #fbf4e9;
+  color: #14252e;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+main {
+  flex: auto;
+}
+
+blockquote,
+dl,
+figcaption,
+li,
+p {
+  max-width: 65ch;
+}
+
+.intro {
+  padding: 10rem 2rem 3rem;
+  min-height: 100vh;
+}
+
+.content {
+  width: 75rem;
+  margin: auto;
+}
+
+.content-title {
+  font-size: var(--font-size-xxxl);
+  margin-bottom: 2rem;
+}
+
+.content-description {
+  font-size: var(--font-size-md);
+  max-width: 42rem;
+}
+
+.content-description p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #14252e;
+  text-decoration-color: #14252e;
+  text-underline-offset: 0.5rem;
+}
