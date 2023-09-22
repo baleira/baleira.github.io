@@ -118,7 +118,7 @@ p {
 }
 
 .content {
-  width: 75rem;
+  max-width: 75rem;
   margin: auto;
 }
 
@@ -132,7 +132,7 @@ p {
   max-width: 42rem;
 }
 
-.content-description p {
+.content-description p:not(:last-child) {
   margin-bottom: 1em;
 }
 
